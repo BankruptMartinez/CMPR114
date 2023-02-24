@@ -1,0 +1,49 @@
+#Carlos Martinez CMPR 140
+
+#Project #1
+month_number = int(input('Pick a month number between 1-12: '))
+if month_number >= 1 and month_number <=3:
+    print('First Quarter')
+elif month_number >=4 and month_number <=6:
+    print ('Second Quarter')
+elif month_number >=7 and month_number <=9:
+    print ('Third Quarter')
+elif month_number >=10 and month_number <=12:
+    print ('Forth Quarter')
+else:
+    print ('Number is not between 1 and 12')
+
+#Project #2
+hot_dogs = 10
+hd_buns = 8
+people_atending = int(input('How many people will be attending the cookout? '))
+hd_per_person = int(input('How many hot dogs will each person get? '))
+total_hotdog_required = people_atending * hd_per_person
+package_of_hotdogs = total_hotdog_required // hot_dogs
+package_of_buns = total_hotdog_required // hd_buns
+leftover_dogs = total_hotdog_required % hot_dogs
+leftover_buns = total_hotdog_required % hd_buns
+print ("Minimum number of packaged hot dogs required", package_of_hotdogs)
+print ("Minimum number of packaged hot dogs required", package_of_buns)
+print ("Leftover hot dogs", leftover_dogs)
+print ("Leftover buns", leftover_buns)
+
+#Project #3
+product = 99
+quantity = int(input('How many packages are you buying? '))
+if quantity >= 10 and quantity <= 19:
+    discount = .10
+elif quantity >= 20 and quantity <= 49:
+    discount = .20
+elif quantity >= 50 and quantity <= 99:
+    discount = .30
+elif quantity >=100:
+    discount = .40
+else:
+    discount = 1
+total_cost_of_product = quantity * product
+discount_amount = total_cost_of_product * discount 
+total_discount = total_cost_of_product - discount_amount
+print ('Total discount', discount)
+print ('Cost of product', total_cost_of_product)
+print ('Total amount after is count', total_discount)
