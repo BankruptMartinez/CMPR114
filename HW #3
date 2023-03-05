@@ -1,0 +1,57 @@
+#Carlos Martinez
+#CMPR 114
+#3/4/23
+
+#1 print screen 
+speed = int(input('What is the speed of the vechicle in mph? '))
+
+time = int(input('How many hours has it traveled? '))
+
+distance = 0
+
+output = '\n Hour     Distance Traveled \n'\
+
+for hour in range (time):
+    distance = speed * (hour + 1)
+
+    output += format (hour + 1) + "              " + \
+          format (distance) + "\n"
+
+print (output)
+
+#2 print screen
+years = int(input('How many year are you checking? '))
+months = 12
+
+inches_rain = 0.0
+totalMonths = 0
+totalInches_Rain = 0
+
+for year in range (years):
+    for month in range (months):
+        inches_rain = float(input("How many inches of rainfall for month #" \
+            + format(month + 1) + ' in year ' + '#' \
+            + format (year + 1) + ": "))
+        totalMonths += 1
+        totalInches_Rain += inches_rain
+
+average_Rainfall = totalInches_Rain / totalMonths
+
+output = "\n Number of months     = " + format(totalMonths) + "\n"     \
+    "Total inches of rainfal     = " + format(totalInches_Rain) + "\n" \
+    "Average rainfall per month     = " + format(average_Rainfall) + '\n'
+
+print(output)
+
+#3 print screen 
+number = 0
+total = 0
+
+while number >= 0:
+    number = int(input('Enter a positive number: '))
+    if number >= 0:
+        total += number
+
+output = "Total = " + format(total)
+
+print (output)
