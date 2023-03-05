@@ -1,0 +1,70 @@
+#Carlos Martinez
+#CMPR #114
+#3/4/23
+
+# Program #1
+
+#The get_scores function gets a series of test
+# scores from the uuser and stores them in a list
+# A reference to the list is returned 
+
+def get_scores():
+    #Create an empty list
+    test_scores = []
+
+    #Create a variale to control the loop
+    again = 'y'
+
+    #Get the scores from the user and add them to 
+    # the list 
+    while again == 'y' :
+        #Get a score and add it to the list
+        value = float (input('Enter a test score: '))
+        test_scores.append(value)
+
+
+        #Want to do this again?
+        print('Do you want to add another score? ')
+        again = input('y = yes, anything else = no: ')
+        print()
+
+    #Return the list
+    return test_scores
+
+# The get_total function accepts a list as an 
+# argument retuyrns the total of the values in 
+# the list
+def get_total (value_list):
+    #Create a variable to use as an accumulator 
+    total = 0.0
+
+    #Calculate the total of the list elements 
+    for num in value_list:
+        total += num
+
+    #Return the total 
+    return total
+
+#Call the main function. 
+if __name__ == '__main__':
+    main()
+
+
+# Program #2
+def main():
+    series_list = []
+    print ('Enter a series of 20 numbers')
+    for index in range (20):
+        print ('Enter number ', index + 1, " : ", end = '')
+        number = float(input())
+        series_list.append(number)
+    lowest = min(series_list)
+    highest = max (series_list)
+    total = sum(series_list)
+    average = total / len(series_list)
+    print("The lowest number in the list is: ", lowest)
+    print ('The highest number in the list is: ', highest)
+    print('The total of the number in the list is: ', total)
+    print ('The average of the number in the list is: ', average)
+
+main()
