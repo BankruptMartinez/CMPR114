@@ -1,0 +1,74 @@
+#Carlos Martinez CMPR 150
+#Project 1
+gross_salary = int(input('Enter gross salary: $'))
+growth = (.10 * 100 + 1)
+growth_salary = gross_salary * growth 
+print ('Your Expected gross salary is $', growth_salary)
+
+#Project 2
+amount1 = int(input('Enter test score '))
+amount2 = int(input('Enter test score '))
+amount3 = int(input('Enter test score '))
+amount4 = int(input('Enter test score '))
+amount5 = int(input('Enter test score '))
+scores = amount1 + amount2 + amount3 + amount4 + amount5
+average = scores / 5
+print ('Your scored a total of ', scores)
+print ('Your avarege score was ', average)
+
+#Project 3
+name = input('Enter your full name: ')
+age = int(input('Enter your age: '))
+print ('Welcome', name + ', ' + format(age))
+
+#Project 4 
+sales = int(input('Enter the amount of Sales: '))
+if sales >= 50000 and sales <= 60000:
+    print ('Your commission will be 10%')
+elif sales >= 70000 and sales <= 80000:
+    print ('Your commission will be 20%')
+elif sales >= 90000 and sales <= 100000:
+    print ('Your commission will be 30%')
+else:
+    print ('Error, not within range.')
+
+#Project 5 
+sales = int(input('Enter the amount of Sales: '))
+if sales >= 50000 and sales <= 60000:
+    salary = 70000
+    commission = .10
+elif sales >= 70000 and sales <= 80000:
+    salary = 80000
+    commission = .20
+elif sales >= 90000 and sales <= 100000:
+    salary = 90000
+    commission = .30
+sandc = salary * commission 
+total = salary + sandc
+print ('You total salary will be', total)
+
+#Project 6 
+g1 = int(input('Enter your first grade: '))
+g2 = int(input('Enter your second grade: '))
+g3 = int(input('Enter your third grade: '))
+g4 = int(input('Enter your fourth grade: '))
+gtotal = g1 + g2 + g3 + g4
+average = gtotal / 4
+if average >= 90 and average <=100:
+    print ("You received an A, Hurray! Your grade average was:", average)
+elif average >= 80 and average <=89:
+    print ("You received an B, Not to bad. Your grade average was:", average)
+elif average >= 70 and average <=79:
+    print ("You received an C, Your grade average was:", average)
+elif average >= 60 and average <=69:
+    print ("You received an D, Your grade average was:", average)
+elif average <69:
+    print ("You received an F,Your grade average was:", average)
+while average > 100:
+    print('Try again. Grades have to be 100 or less')
+    
+#Project 7 
+total = 1
+for number in range (10):
+    total = total + number
+    print (total)
