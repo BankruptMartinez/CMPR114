@@ -1,4 +1,4 @@
-#Carlos Martinez CMPR 150
+#Carlos Martinez CMPR 114
 #Project 1
 gross_salary = int(input('Enter gross salary: $'))
 growth = (.10 * 100 + 1)
