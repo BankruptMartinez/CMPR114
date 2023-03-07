@@ -66,7 +66,22 @@ elif average <69:
     print ("You received an F,Your grade average was:", average)
 while average > 100:
     print('Try again. Grades have to be 100 or less')
-    
+    g1 = int(input('Enter your first grade: '))
+    g2 = int(input('Enter your second grade: '))
+    g3 = int(input('Enter your third grade: '))
+    g4 = int(input('Enter your fourth grade: '))
+    gtotal = g1 + g2 + g3 + g4
+    average = gtotal / 4
+    if average >= 90 and average <=100:
+        print ("You received an A, Hurray! Your grade average was:", average)
+    elif average >= 80 and average <=89:
+        print ("You received an B, Not to bad. Your grade average was:", average)
+    elif average >= 70 and average <=79:
+        print ("You received an C, Your grade average was:", average)
+    elif average >= 60 and average <=69:
+        print ("You received an D, Your grade average was:", average)
+    elif average <69:
+        print ("You received an F,Your grade average was:", average)
 #Project 7 
 total = 1
 for number in range (10):
